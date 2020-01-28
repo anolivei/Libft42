@@ -6,18 +6,18 @@
 /*   By: anolivei <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/26 20:37:31 by anolivei          #+#    #+#             */
-/*   Updated: 2020/01/28 18:34:55 by anolivei         ###   ########.fr       */
+/*   Updated: 2020/01/28 19:21:24 by anolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	count_words(const char *s, char c)
+static int		count_words(const char *s, char c)
 {
 	int i;
 	int n_word;
 	int control;
-	
+
 	i = 0;
 	control = 0;
 	n_word = 0;
@@ -35,7 +35,7 @@ static int	count_words(const char *s, char c)
 	return (n_word);
 }
 
-static char	*string(const char *s, int init, int end)
+static char		*string(const char *s, int init, int end)
 {
 	char	*string;
 	int		i;
@@ -52,32 +52,30 @@ static char	*string(const char *s, int init, int end)
 	return (string);
 }
 
-char	**ft_split(char const *s, char c)
+char			**ft_split(char const *s, char c)
 {
 	char	**split;
 	int		init_w;
 	size_t	i;
 	size_t	j;
-	
+
 	if (s == 0)
 		return (NULL);
-	i = 0;
+	i = -1;
 	j = 0;
 	init_w = -1;
 	split = malloc((count_words(s, c) + 1) * sizeof(char *));
 	if (split == 0)
 		return (NULL);
-	while (i <= ft_strlen(s))
+	while (++i <= ft_strlen(s))
 	{
-		if (s[i] != c && init_w < 0) 
+		if (s[i] != c && init_w < 0)
 			init_w = i;
 		else if ((s[i] == c || i == ft_strlen(s)) && init_w >= 0)
 		{
-			split[j] = string(s, init_w, i);
-			j++;
+			split[j++] = string(s, init_w, i);
 			init_w = -1;
 		}
-		i++;
 	}
 	split[j] = NULL;
 	return (split);
