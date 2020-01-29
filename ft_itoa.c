@@ -6,7 +6,7 @@
 /*   By: anolivei <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 19:24:29 by anolivei          #+#    #+#             */
-/*   Updated: 2020/01/29 00:44:43 by anolivei         ###   ########.fr       */
+/*   Updated: 2020/01/29 01:07:43 by anolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ char		*ft_itoa(int n)
 	if (!(itoa = (char *)malloc((count_digits(n) + 2) * sizeof(char))))
 		return (NULL);
 	if (n == -2147483648)
-		return (ft_substr("-2147483648", 0, 13));
+		return (ft_substr("-2147483648", 0, 11));
 	i = 0;
 	if (n < 0)
 	{
