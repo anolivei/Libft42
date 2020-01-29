@@ -6,7 +6,7 @@
 #    By: anolivei <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/21 20:08:14 by anolivei          #+#    #+#              #
-#    Updated: 2020/01/28 18:48:27 by anolivei         ###   ########.fr        #
+#    Updated: 2020/01/28 19:28:34 by anolivei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,8 @@ FUNCTIONS = ft_memset.c		\
 			ft_substr.c		\
 			ft_strjoin.c	\
 			ft_strtrim.c	\
-			ft_split.c
+			ft_split.c		\
+			ft_itoa.c
 
 OBJ = 	ft_memset.o		\
 		ft_bzero.o		\
@@ -68,7 +69,8 @@ OBJ = 	ft_memset.o		\
 		ft_substr.o		\
 		ft_strjoin.o	\
 		ft_strtrim.o	\
-		ft_split.o
+		ft_split.o		\
+		ft_itoa.o
 
 MAIN = main.c
 
