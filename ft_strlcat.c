@@ -6,7 +6,7 @@
 /*   By: anolivei <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 23:42:31 by anolivei          #+#    #+#             */
-/*   Updated: 2020/01/28 18:38:04 by anolivei         ###   ########.fr       */
+/*   Updated: 2020/01/30 02:19:39 by anolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 		count_d++;
 		put++;
 	}
-	dst[count_d] = '\0';
+	if (count_d <= dstsize)
+		dst[count_d] = '\0';
 	return (sum);
 }
