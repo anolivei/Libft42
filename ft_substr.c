@@ -6,7 +6,7 @@
 /*   By: anolivei <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/26 04:53:57 by anolivei          #+#    #+#             */
-/*   Updated: 2020/01/28 18:39:45 by anolivei         ###   ########.fr       */
+/*   Updated: 2020/01/30 23:16:03 by anolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (0);
 	s_len = ft_strlen(s);
 	substring = malloc((len + 1) * sizeof(char));
-	if (s == 0)
-		return (0);
 	if (substring == 0)
 		return (0);
 	while (i < len && (start + i) < s_len)
