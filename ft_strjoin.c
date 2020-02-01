@@ -6,7 +6,7 @@
 /*   By: anolivei <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/26 05:41:44 by anolivei          #+#    #+#             */
-/*   Updated: 2020/01/28 18:40:27 by anolivei         ###   ########.fr       */
+/*   Updated: 2020/01/31 20:51:24 by anolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (s1 == 0 || s2 == 0)
 		return (0);
 	i = 0;
-	string = malloc((ft_strlen(s1) + ft_strlen(s2)) * sizeof(*string));
+	string = malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(*string));
 	if (string == 0)
 		return (0);
 	while (s1[i] != '\0')

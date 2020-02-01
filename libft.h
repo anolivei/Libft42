@@ -6,7 +6,7 @@
 /*   By: anolivei <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 23:13:13 by anolivei          #+#    #+#             */
-/*   Updated: 2020/01/30 23:38:56 by anolivei         ###   ########.fr       */
+/*   Updated: 2020/01/31 19:13:12 by anolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+# include <stdio.h>
 # include <unistd.h>
 
 /*

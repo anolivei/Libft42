@@ -6,7 +6,7 @@
 /*   By: anolivei <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/26 20:37:31 by anolivei          #+#    #+#             */
-/*   Updated: 2020/01/28 19:21:24 by anolivei         ###   ########.fr       */
+/*   Updated: 2020/01/31 20:50:40 by anolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static char		*string(const char *s, int init, int end)
 	int		i;
 
 	i = 0;
-	string = (char*)malloc((end - init) * sizeof(char));
+	string = (char*)malloc((end - init + 1) * sizeof(char));
 	while (end > init)
 	{
 		string[i] = s[init];
