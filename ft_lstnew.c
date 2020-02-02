@@ -6,7 +6,7 @@
 /*   By: anolivei <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 02:24:46 by anolivei          #+#    #+#             */
-/*   Updated: 2020/01/30 20:24:26 by anolivei         ###   ########.fr       */
+/*   Updated: 2020/02/01 19:58:11 by anolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list *new_element;
 
-	new_element = (t_list *)malloc(sizeof(t_list));
-	if (new_element == 0)
+	new_element = (t_list*)malloc(1 * sizeof(t_list));
+	if (new_element == NULL)
 		return (NULL);
 	new_element->content = content;
 	new_element->next = NULL;

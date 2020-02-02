@@ -6,7 +6,7 @@
 /*   By: anolivei <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 22:41:48 by anolivei          #+#    #+#             */
-/*   Updated: 2020/01/30 22:56:39 by anolivei         ###   ########.fr       */
+/*   Updated: 2020/02/01 20:15:33 by anolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	while (*lst != 0)
 	{
 		delete = *lst;
-		del(delete->content);
-		free(delete);
 		*lst = (*lst)->next;
+		ft_lstdelone(delete, del);
 	}
 }
