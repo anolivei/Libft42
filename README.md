@@ -18,4 +18,4 @@ To delete the objects and the executable file, type:
 ```
 make fclean
 ```
-To understand better this project, read the [subject](https://github.com/anolivei/libft42/blob/master/en.subject.pdf)<br>
+To understand this project better, read the [subject](https://github.com/anolivei/libft42/blob/master/en.subject.pdf)<br>
